@@ -1,8 +1,5 @@
 include header.jade
-                p='Words found:'+words.length
-                hr
-                -for(var i = 0; i < words.length; i++)
-                    a(href="https://www.google.com/search?q=define "+words[i] target="_blank")=words[i]
-                    br
-                hr
-                include footer.jade
+                    p='Words found:'+words.length
+                    -for(var i = 0; i < words.length; i++)
+                        a(href="https://www.google.com/search?q=define "+words[i] target="_blank")=words[i]
+                    include footer.jade

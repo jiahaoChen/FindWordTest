@@ -23,19 +23,17 @@ html
                 div(class="row")
                     h3 Word Finder
                     p I took every english word (over 200k words) and built a little app that will help you find words that contain specific characters.
-                    hr
                 div(class="row")
                     p Enter a word, use _ and ? as needed (see instructions below)
                     form(method="post" action="search")
-                    if pattern
-                        input(type="text"
-                        class="col-md-12"
-                        name="pattern"
-                        placeholder="enter pattern and press"
-                        value=pattern)
-                    else
-                        input(type="text"
-                        class="col-md-12"
-                        name="pattern"
-                        placeholder="enter pattern and press")
-                hr
+                        if pattern
+                            input(type="text"
+                            class="col-md-12"
+                            name="pattern"
+                            placeholder="enter pattern and press"
+                            value=pattern)
+                        else
+                            input(type="text"
+                            class="col-md-12"
+                            name="pattern"
+                            placeholder="enter pattern and press")

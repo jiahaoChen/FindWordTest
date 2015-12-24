@@ -9,9 +9,11 @@ router.get('/', function(req, res, next) {
 
 router.post('/search', function (req, res) {
   console.log(req.body.pattern);
-  var result = words.search(req.body.pattern).result;
-  console.log(result);
+  var result = words.search(req.body.pattern);
+  //console.log(result);
+  console.log(req.body.pattern);
   res.render('result', {words: result, pattern: req.body.pattern});
+  //res.render('result', {pattern: null});
 });
 
 module.exports = router;

@@ -1,6 +1,7 @@
 var _=require('underscore');
 
 function search(word) {
+    console.log('enter search!');
     var exclude = _.filter(word, function(w){
         return !(w != '?') || !(w != '_');
     });
@@ -16,7 +17,6 @@ function search(word) {
     var result = _.filter(dictionary, function(w) {
         return w.match(new RegExp(toSearch, "i"))
     });
-
     return result;
 };
 
