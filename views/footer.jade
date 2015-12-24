@@ -1,0 +1,30 @@
+div(class="row")
+    h3 The underscore
+    p Type a word into the text box with the following pattern:
+    pre he__o
+    p And you'll get words such as:
+    pre "hello \n helio"
+div(class="row")
+    h3 The question mark
+    p This character is great for games like What's the Phrase (a knock off of Wheel of Fortune)
+    p Type a word into the text box with the following pattern:
+    pre st???
+    p and you'll get words such as:
+    pre "stack\nstade\nstaff\nstage\nstagy"
+    p but you wont get words like
+    pre start
+    p because the `t` would already be visible (in What's the Phrase), and you would have typed:
+    pre st??t
+div(class="row")
+    h3 I know regex
+    p The behaviors above will be overriden if you prefix and suffix your phrase with
+        <code>/<code>, example:
+    pre /boo/
+    p Will give you all words that contain <code>boo</code>.
+
+
+
+
+
+
+
